@@ -1,0 +1,16 @@
+[
+	{"id": 1,
+		"name": "Autentia",
+		"img": "./WebResources/xxx.png",
+		"text": "Texto",
+		"alt": "xxxx",
+		"url": "https:xxxx"
+	},{
+	"id": 2,
+	"name": "Liferay",
+	"img": "./WebResources/xxx.png",
+	"text": "Texto",
+	"alt": "xxxx",
+	"url": "https:xxxx"
+    }
+]

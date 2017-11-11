@@ -43,5 +43,13 @@
         <a>Support</a> |
         <a target="_blank" href="http://angularjs.blogspot.ca/">Visit angularjs.blogspot.ca</a> 
       </div>
+      <div class="col-sm-4">
+        <ul>
+          <li *ngFor="let contributor of contributors">{{ contributor.name}}<a href="{{ contributor.url }}" ><img src="{{ contributor.img }}" alt=""></a></li>
+        </ul>
+        <a>Privacy Policy</a> |
+        <a>Support</a> |
+        <a target="_blank" href="http://angularjs.blogspot.ca/">Visit angularjs.blogspot.ca</a> 
+      </div>
   </div>
 </div>

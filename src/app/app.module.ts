@@ -9,6 +9,8 @@ import { MatMenuModule } from '@angular/material';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { APP_ROUTES } from './app.routing';
+import { ContributorsService } from './footer/contributors.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,9 +26,10 @@ import { APP_ROUTES } from './app.routing';
     BrowserModule,
     FormsModule,
     MatMenuModule,
-    APP_ROUTES
+    APP_ROUTES,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContributorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
