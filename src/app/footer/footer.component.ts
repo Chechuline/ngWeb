@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContributorsService } from './contributors.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   year = new Date().getFullYear();
-
-  constructor() { }
+  contributors: any;
+  constructor( private CS: ContributorsService) {
+  }
 
   ngOnInit() {
+    this.CS.getContributors()
+    .subscribe(data => {
+      this.contributors = data;
+    }, reject => {
+      console.log(reject);
+    })
   }
 
 }

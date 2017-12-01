@@ -23,25 +23,35 @@
   </div>
 
   <!-- Second row -->
-  <div class="row">
+  <div class="row jumbotron">
+      <div class="col-sm-12 contributors">
+          <ul>
+            <li *ngFor="let contributor of contributors" class="col-sm-2"><a href="{{ contributor.url }}" target="_blank"><img src="{{ contributor.img }}" alt="{{ contributor.name}}"></a></li>
+          </ul>
+          
+        </div>
+<div class="col-sm-12 social">
       <div class="col-sm-4">
-          Copyright © {{ year }} NgLabs
+          <small>Copyright &copy; {{ year }} NgLabs</small>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
           <span class="fa-stack">
-            <a>GitHub</a> |
+            <a><img src="/assets/img/github.png" alt="github"></a> 
           </span>
           <span class="fa-stack">
-            <a>Meetup</a> |
+            <a><img src="/assets/img/meetup_logo.png" alt="meetup"></a> 
           </span>
           <span class="fa-stack">
-            <a target="_blank" href="https://twitter.com/ngLabs_madrid">Twitter</a>
+            <a target="_blank" href="https://twitter.com/ngLabs_madrid"><img src="/assets/img/Twitter.svg.png" alt="twitter"></a>
           </span>
       </div>
-      <div class="col-sm-4">
+  
+      <div class="col-sm-5">
         <a>Privacy Policy</a> |
         <a>Support</a> |
         <a target="_blank" href="http://angularjs.blogspot.ca/">Visit angularjs.blogspot.ca</a> 
       </div>
+
   </div>
+</div>
 </div>

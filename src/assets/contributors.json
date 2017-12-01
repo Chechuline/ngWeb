@@ -1,0 +1,16 @@
+[
+	{"id": 1,
+		"name": "Autentia",
+		"img": "/assets/img/logoAutentia.png",
+		"text": "Texto",
+		"alt": "xxxx",
+		"url": "https://www.autentia.com/"
+	},{
+	"id": 2,
+	"name": "Liferay",
+	"img": "/assets/img/liferay_logo.png",
+	"text": "Texto",
+	"alt": "xxxx",
+	"url": "https://www.liferay.com/es/"
+    }
+]
