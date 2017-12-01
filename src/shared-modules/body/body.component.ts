@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceGithubService } from '../service-github/service-github.service';
 
 @Component({
   selector: 'app-body',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gs: ServiceGithubService) { }
 
   ngOnInit() {
+    const usersOfAProject = this.gs.getUsers();
+    usersOfAProject.subscribe(
+      res => console.log(res),
+      err => console.error(err)
+    )
+    const PROJ = this.gs.getProjects().subscribe(
+      res => console.log(res)
+    )
   }
 
 }

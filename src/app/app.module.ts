@@ -12,7 +12,6 @@ import { APP_ROUTES } from './app.routing';
 import { ContributorsService } from './footer/contributors.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
